@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+const apiKey = import.meta.env.VITE_API_KEY;
+
 const Weather = () => {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
